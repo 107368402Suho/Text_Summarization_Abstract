@@ -1,18 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-'''=================================================
-- 在目录下执行python textrank4zh.py
-- 报错 ModuleNotFoundError: No module named 'conf'
-- 原因：https://stackoverflow.com/questions/52557522/modulenotfounderror-no-module-named-xxx-conf-xxx-is-not-a-package
 
-- 解决方法：在代码最上面中添加
-import os
-import sys
-
-current_dir = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(current_dir)[0]
-sys.path.append(rootPath)
-=================================================='''
 from textrank4zh import TextRank4Keyword, TextRank4Sentence, Segmentation
 import os
 import sys
